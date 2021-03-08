@@ -1,0 +1,20 @@
+# 构建源码语言类型
+code.language=node8.x
+
+# 编译命令
+build.command=npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ && npm --registry https://registry.npm.taobao.org install && npm run build:$PACKAGE_LABEL
+
+# 编译输出目录
+build.output=dist
+
+# 应用部署脚本
+deploy.appctl.path=deploy.sh
+
+# 指定Dockerfile
+docker.file=Dockerfile
+
+# Docker镜像构建之后push的仓库地址
+docker.repo=registry.cn-shanghai.aliyuncs.com/dcpworks/zqh-admin
+
+# Docker镜像tag
+docker.tag=${TIMESTAMP}

@@ -2,3 +2,13 @@
 /.idea/
 *.iml
 rebel.xml
+**/target
+**/logs
+
+## eclipse
+**/.project
+**/.classpath
+
+## mac
+.DS_Store
+**/.DS_Store
